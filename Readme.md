@@ -64,7 +64,9 @@
    yarn install
    ```
 
-3. Start the development sertver:
+3. Create a `.env` file from `.env.example`, the value should be same as the backend URL with port
+
+4. Start the development sertver:
    ```sh
    yarn dev
    ```

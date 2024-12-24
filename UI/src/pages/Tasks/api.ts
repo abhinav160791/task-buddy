@@ -1,7 +1,9 @@
 import { TaskFormValue, TaskResponse } from './types';
 
+const API_BASE_URL = `${import.meta.env.VITE_API_URL}/api/v1`;
+
 export const getTasks = async () => {
-  const response = await fetch('http://localhost:8000/api/v1/tasks');
+  const response = await fetch(`${API_BASE_URL}/tasks`);
   const data: TaskResponse = await response.json();
   return {
     ...data,
@@ -13,7 +15,7 @@ export const getTasks = async () => {
 };
 
 export const createTask = async (data: TaskFormValue) => {
-  const response = await fetch('http://localhost:8000/api/v1/tasks', {
+  const response = await fetch(`${API_BASE_URL}/tasks`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -27,7 +29,7 @@ export const createTask = async (data: TaskFormValue) => {
 };
 
 export const deleteTask = async (id: string) => {
-  const response = await fetch(`http://localhost:8000/api/v1/task/${id}`, {
+  const response = await fetch(`${API_BASE_URL}/task/${id}`, {
     method: 'DELETE',
   });
   if (!response.ok) {
