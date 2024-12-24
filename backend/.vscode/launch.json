@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Django: Runserver",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/manage.py",
+      "args": ["runserver"],
+      "django": true,
+      // "python": "/usr/bin/python3.10", // Adjust this path if needed
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

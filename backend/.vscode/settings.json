@@ -1,0 +1,18 @@
+{
+  "python.envFile": "${workspaceFolder}/.vscodeenv",
+  "python.defaultInterpreterPath": "venv/bin/python",
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "black-formatter.args": ["--line-length", "79"],
+  "python.testing.pytestArgs": ["."],
+  "python.testing.pytestEnabled": true,
+  "isort.args": ["--profile", "black"],
+  "editor.stickyScroll.enabled": true,
+  "pylint.path": ["venv/bin/pylint"],
+  "black-formatter.path": ["venv/bin/black"]
+}

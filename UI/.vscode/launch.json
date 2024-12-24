@@ -1,0 +1,15 @@
+{
+    "version": "0.1.0",
+    "configurations": [
+      {
+        "name": "Start Web",
+        "type": "node-terminal",
+        "request": "launch",
+        "command": "yarn dev",
+        "presentation": {
+            "group": "START",
+        }
+      },
+    ],
+    "resolveSourceMapLocations": ["${workspaceFolder}/**", "!**/node_modules/**"]
+  }

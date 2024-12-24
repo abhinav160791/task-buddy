@@ -1,0 +1,22 @@
+{
+    "folders": [
+        {
+            "name": "Root",
+            "path": "../",
+        },
+	    {
+            "name": "backend",
+            "path": "../backend",
+        },
+        {
+            "name": "frontend",
+            "path": "../UI"
+        },
+    ],
+    "settings": {
+        "files.exclude": {
+            "backend/": true,
+            "UI/": true,
+        }
+    }
+}
