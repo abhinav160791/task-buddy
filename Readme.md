@@ -78,6 +78,12 @@
 
 Open your browser and navigate to the frontend server URL to access the application.
 
+## Using workspace in VS CODE
+
+1. Go to the `<project_root>/.vscode/project.code-workspace` file
+2. At the bottom right you will see a button that says `Open Workspace`, click it
+3. Go to `Run and debug` and you can run the application in debug mode. This would work only if you have completed the installation steps mentioned above for backend and frontend.
+
 ## Additional Notes
 
 - Ensure that both the backend and frontend servers are running simultaneously.
